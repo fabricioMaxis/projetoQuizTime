@@ -193,27 +193,27 @@ public class playerSelect2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabelLailaActionPerformed
 
     private void HellenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HellenActionPerformed
-       jLabelLaila.setSelected(false);
+       Laila.setSelected(false);
        Kaiser.setSelected(false);
        Odin.setSelected(false);
        Lulu.setSelected(false);    }//GEN-LAST:event_HellenActionPerformed
 
     private void KaiserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KaiserActionPerformed
        Hellen.setSelected(false);
-       jLabelLaila.setSelected(false);
+       Laila.setSelected(false);
        Odin.setSelected(false);
        Lulu.setSelected(false);    }//GEN-LAST:event_KaiserActionPerformed
 
     private void OdinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OdinActionPerformed
        Hellen.setSelected(false);
        Kaiser.setSelected(false);
-       jLabelLaila.setSelected(false);
+       Laila.setSelected(false);
        Lulu.setSelected(false);    }//GEN-LAST:event_OdinActionPerformed
 
     private void LuluActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LuluActionPerformed
        Hellen.setSelected(false);
        Kaiser.setSelected(false);
-       Odin.setSelected(false);
+       Odin.setSelected(false); 
        jLabelLaila.setSelected(false);    }//GEN-LAST:event_LuluActionPerformed
 
     private void player2SelectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_player2SelectActionPerformed
