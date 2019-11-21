@@ -20,7 +20,7 @@ public class telaError extends javax.swing.JFrame {
     public telaError() {
         initComponents();
     }
-    public static final String Som ="C:\\Users\\fabricio.pereira\\Downloads\\Error.mp3";
+    public static final String Som ="C:\\Users\\Sad.mp3";
      MP3Player mp3player = new MP3Player(new File (Som));
 
     /**
