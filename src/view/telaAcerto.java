@@ -5,6 +5,9 @@
  */
 package view;
 
+import jaco.mp3.player.MP3Player;
+import java.io.File;
+
 /**
  *
  * @author fabricio.pereira
@@ -17,6 +20,9 @@ public class telaAcerto extends javax.swing.JFrame {
     public telaAcerto() {
         initComponents();
     }
+    
+    public static final String Som ="C:\\Users\\fabricio.pereira\\Downloads\\Yes.mp3";
+     MP3Player mp3player = new MP3Player(new File (Som));
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -31,6 +37,11 @@ public class telaAcerto extends javax.swing.JFrame {
         buttonAcerto = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/green.png"))); // NOI18N
 
@@ -58,6 +69,10 @@ public class telaAcerto extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+mp3player.play();        // TODO add your handling code here:
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments
